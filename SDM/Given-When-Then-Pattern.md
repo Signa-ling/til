@@ -21,7 +21,7 @@ describe 'name のバリデーションについて' do
 
     it 'エラーになること' do
       # then
-      expect(name).to be_invalid
+      expect(user).to be_invalid
     end
   end
 
@@ -31,7 +31,7 @@ describe 'name のバリデーションについて' do
 
     it 'エラーにならないこと' do
       # then
-      expect(name).to be_valid
+      expect(user).to be_valid
     end
   end
 end
