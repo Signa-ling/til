@@ -33,6 +33,12 @@ const sampleVariable = process.env.SAMPLE;
 console.log(sampleVariable); // => undefined
 ```
 
+## セキュリティ面の備考
+
+`NEXT_PUBLIC` を付与することでクライアント側で扱えるようになると、今度はこの値がブラウザから閲覧できるということになる。
+
+そのため、公開するとまずい情報 (e.g. API KEY) を含んでしまっていないか注意する必要がある。
+
 ## 参考
 
 - [Configuring: Environment Variables | Next.js](https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables)
