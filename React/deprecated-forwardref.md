@@ -21,7 +21,7 @@ function MyInput({props, ref}) {
   // 中略
 }
 
-<MyInput ref=ref />
+<MyInput ref={ref} />
 ```
 
 これによって将来的に forwardref が非推奨になり削除されるとのこと。
